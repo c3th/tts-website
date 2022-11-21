@@ -1,0 +1,116 @@
+
+
+
+/* Hidden Element */
+
+.hidden {
+    display: none;
+}
+
+
+/* Container CSS */
+
+.container {
+    box-sizing: border-box;
+    width: 60%;
+}
+
+
+/* Menu CSS */
+
+.menu {
+    background-color: var(--default-color);
+    border-radius: 4px;
+    margin: 2vh;
+    padding: 2vh;
+}
+
+.menu input,
+.menu select {
+    background-color: var(--brighter-color);
+    border-radius: 4px;
+    margin: 5px 0 10px 0;
+    color: white;
+}
+
+.menu input[type=text],
+.menu input[type=submit],
+.menu select {
+    padding: 10px;
+    width: 100%;
+}
+
+.menu input[type=submit] {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2 background-color;
+}
+
+.menu input[type=submit]:hover {
+    background-color: rgb(25, 25, 37);
+}
+
+.menu .disabled {
+    background-color: var(--brighter-color);
+    cursor: default;
+}
+
+
+/* Table CSS */
+
+.logs {
+    background-color: var(--default-color);
+    border-radius: 4px;
+    color: white;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+
+/* Options CSS */
+
+.options {
+    text-align: center;
+}
+
+.options .play,
+.options .download {
+    /* display: block; */
+    /* padding: 12px 16px; */
+    /* border-radius: 4px; */
+    /* margin-top: 10px; */
+    width: 49%;
+}
+
+.options .download {
+    background-color: var(--brighter-color);
+    float: left;
+}
+
+.options .play {
+    background-color: var(--brighter-color);
+    float: right;
+}
+
+
+/* Button CSS */
+
+.btn {
+    text-align: center;
+    background-color: rgb(51, 51, 104);
+    color: white;
+    transition: ease-in-out 0.1s background-color,
+        ease-in-out 0.1s filter;
+    
+    filter: drop-shadow(0px 2px 0px #ffffff);
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #225;
+    filter: drop-shadow(0 0 0 #ffffff);
+    cursor: pointer;
+}

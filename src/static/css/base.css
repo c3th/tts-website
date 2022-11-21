@@ -1,0 +1,63 @@
+
+
+:root {
+    --default-font: Arial, Helvetica, sans-serif;
+    --default-background: #222;
+    --default-color: #223;
+    --darker-color: rgb(26, 26, 39);
+    --brighter-color: rgb(51, 51, 104);
+    --placeholder-color: rgb(109, 109, 216);
+}
+
+* {
+    font-family: var(--default-font);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--default-background);
+}
+
+
+/* Input */
+
+input,
+select {
+    border-style: none;
+}
+
+a,
+label {
+    text-decoration: none;
+    color: white;
+}
+
+::placeholder {
+    color: var(--placeholder-color);
+}
+
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, 
+td {
+    border-bottom: 2px solid var(--brighter-color);
+    text-align: left;
+    font-weight: 300;
+    padding: 8px;
+}
+
+td:hover {
+    background-color: var(--brighter-color);
+}
+
+*:focus {
+    outline: none;
+}

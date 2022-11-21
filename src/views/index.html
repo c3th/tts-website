@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Text to Speech</title>
+
+  <link rel="stylesheet" href="/static/css/base.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/mobile.css">
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/static/js/app.js"></script>
+</head>
+
+<body>
+  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+  <div class="container">
+    <div class="menu">
+      <form action="/" method="get" target="dummyframe">
+        <label for="text">Enter the desired text</label>
+        <input type="text" name="text" autocomplete="off" placeholder="hello world...">
+
+        <label for="voice">Voice</label>
+        <select name="voice" id="voices">
+          <option value="en_us_007"></option>
+        </select>
+
+        <div class="options hidden">
+          <a href="#" class="download btn">Download</a>
+          <a href="#" class="play btn">Play</a>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="logs">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Voice</th>
+          <th>Download</th>
+          <th>Play</th>
+        </tr>
+        <!-- <tr>
+          <td>2022-05-24</td>
+          <td>en_us_007</td>
+          <td><a href="#">Link</a></td>
+          <td><a href="#">Sound</a></td>
+        </tr> -->
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
